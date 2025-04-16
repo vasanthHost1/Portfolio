@@ -3,6 +3,7 @@ body{
     margin: 0;
     padding: 0;
     background-color:rgb(251, 250, 247);
+    user-select:none;
    
     
 }
@@ -59,6 +60,7 @@ img{
     }
 }
 #frontabt{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     position: relative;
     right: 70px;
     text-align: center;
@@ -97,7 +99,17 @@ img{
     border: none;
     font-size: large;
     cursor: pointer;
+   
 }
+
+#navItem button:hover{
+  
+    opacity: 0.5;
+    border-radius: 5px;
+ color:bisque;
+    border: 1px solid white;
+}
+
 #name{
     white-space: nowrap;
     overflow:hidden;
@@ -125,14 +137,32 @@ img{
 }
 
 #About{
-    background-color: white;
-    text-align: center;
+    font-family: "Poppins", sans-serif;
+    background-color:rgb(251, 250, 247);
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
     position: absolute;
     top: 930px;
     width: 100%;
-    border: 1px solid black;
-    height:1000px;
+   
+    height:1100px;
 }
+
+#abtimg{
+    top: 300px;
+    position: absolute;
+    right: 100px;
+    width: 500px;
+    height: 500px;
+}
+
+#abtcontent{
+    width: 700px;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
 html{
     scroll-behavior: smooth;
 }
