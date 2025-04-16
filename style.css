@@ -1,7 +1,9 @@
 body{
+    
     margin: 0;
     padding: 0;
     background-color:rgb(251, 250, 247);
+   
     
 }
 
@@ -13,13 +15,17 @@ body{
   }
 
 #nav{
-    background-color: rgb(47, 47, 246);
+
+    
+    background-color: hsla(14, 97%, 57%, 0.809);
+    background-color:;
     width: 100%;
     height: 60px;
-    border: 1px solid black;
+    border:none;
 }
 
 #img{
+    
     position: absolute;
     top: 150px;
     right: 5px;
@@ -27,6 +33,7 @@ body{
     height: 1000px;
 }
 #nameContent{
+    
     top: 200px;
     position: absolute;
     left: 250px;
@@ -35,10 +42,49 @@ body{
     font-size: 2rem;
 }
 img{
+    animation: appear linear;
+    animation-duration: 0.8s;
     width: 800px;
     height: 750px;
 }
 
+@keyframes appear {
+    from{
+        opacity: 0;
+        transform: translateX(200px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+#frontabt{
+    position: relative;
+    right: 70px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    padding:30px;
+    animation: webd linear;
+    animation-duration: 1s;
+    background-color: hsla(14, 93%, 57%, 0.809);
+}
+#abtp{
+
+    /* animation: webd linear;
+    animation-duration: 1s; */
+}
+
+@keyframes webd {
+    from{
+        opacity: 0;
+        transform: translateY(300px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
 #navItem{
     position: absolute;
     right: 10px;
@@ -51,4 +97,42 @@ img{
     border: none;
     font-size: large;
     cursor: pointer;
+}
+#name{
+    white-space: nowrap;
+    overflow:hidden;
+    border-right:5px solid black;
+    width: 68%;
+    animation: 
+    typing 1.5s steps(11),
+    cursor 2.8s   ;
+    animation-fill-mode: forwards;
+}
+
+@keyframes cursor {
+    50%{
+        border-color: black;
+    }
+     100% { border-color: transparent;} 
+
+    
+}
+
+@keyframes typing {
+    from { width: 0; border-color: transparent;}
+    
+    
+}
+
+#About{
+    background-color: white;
+    text-align: center;
+    position: absolute;
+    top: 930px;
+    width: 100%;
+    border: 1px solid black;
+    height:1000px;
+}
+html{
+    scroll-behavior: smooth;
 }
