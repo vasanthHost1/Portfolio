@@ -40,11 +40,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
   
-  <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const isMobile = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
-    if (isMobile) {
-      alert("This site is not fully optimized for mobile devices. For the best experience, please use a laptop or PC.");
-    }
-  });
-</script>
+  
+  
+  alert("⚠️ This site is not fully optimized for mobile devices. For the best experience, please use a laptop or PC 💻.");
+
+    
