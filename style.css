@@ -79,6 +79,8 @@ img{
 }
 
 @keyframes webd {
+  
+
     from{
         opacity: 0;
         transform: translateY(300px);
@@ -87,7 +89,9 @@ img{
         opacity: 1;
         transform: translateY(0px);
     }
+
 }
+
 #navItem{
     position: absolute;
     right: 10px;
@@ -355,4 +359,276 @@ body {
     .service p, .service ul li {
         font-size: 1rem;
     }
+}
+
+
+
+
+/* Additional Media Query for Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    body {
+        overflow: auto;
+    }
+
+    #nav {
+        height: auto;
+    }
+
+    #img {
+        height: auto;
+        max-width: 100%; /* Adjust image size */
+        position: relative; /* Better for smaller screens */
+    }
+
+    #nameContent {
+        left: 20px; /* Adjusted margin for smaller screens */
+        font-size: 1.5rem; /* Smaller font size */
+    }
+
+    img {
+        width: 100%;
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    #frontabt {
+        padding: 15px;
+        right: 0; /* Centering and simplifying layout */
+    }
+
+    #About {
+        top: auto;
+        width: 100%;
+        height: auto;
+        position: relative; /* Easier stacking for mobile layout */
+    }
+
+    #abtimg {
+        top: auto;
+        width: 100%;
+        height: auto;
+        right: 0; /* Center image */
+        position: relative;
+        margin: 10px 0;
+    }
+
+    #abtcontent {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    #service {
+        top: auto;
+        position: relative;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .service {
+        margin-left: 0;
+        width: 100%; /* Full width for smaller screens */
+        padding: 10px;
+    }
+
+    /* Nav Items Adjustments */
+    #navItem {
+        right: 0;
+        position: relative;
+        text-align: center;
+    }
+
+    #navItem button {
+        margin: 10px; /* Spaced better for touch devices */
+        font-size: medium; /* Smaller for smaller screens */
+    }
+}
+/* Comprehensive Mobile-Friendly Styling */
+@media screen and (max-width: 768px) {
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: rgb(251, 250, 247);
+    }
+
+    #nav {
+        width: 100%;
+        height: auto; /* Adjust height for smaller screens */
+        text-align: center;
+    }
+
+    #navItem {
+        display: flex;
+        justify-content: center; /* Center navigation buttons */
+        flex-wrap: wrap; /* Wrap buttons to fit the screen */
+    }
+
+    #navItem button {
+        margin: 10px;
+        font-size: medium; /* Adjust button size */
+    }
+
+    #img {
+        max-width: 100%;
+        height: auto; /* Maintain aspect ratio */
+        position: relative;
+    }
+
+    #nameContent {
+        top: auto;
+        left: 20px; /* Adjust position for smaller screens */
+        font-size: 1.2rem; /* Reduce font size */
+        margin: 10px;
+    }
+
+    #frontabt {
+        padding: 15px;
+        margin: 10px; /* Add spacing for better layout */
+        border-radius: 5px; /* Simplify design */
+    }
+
+    #About {
+        width: 100%;
+        height: auto; /* Adjust height for dynamic content */
+        padding: 20px; /* Add padding for cleaner spacing */
+        box-sizing: border-box;
+    }
+
+    #abtimg {
+        width: 100%;
+        height: auto;
+        margin: 10px 0; /* Center image */
+        position: relative;
+    }
+
+    #abtcontent {
+        width: 90%;
+        margin: 10px auto;
+        font-size: 1rem; /* Scale down content size */
+    }
+
+    #service {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .service {
+        width: 100%;
+        margin: 15px 0; /* Spacing for sections */
+        padding: 15px;
+        box-shadow: none; /* Simplify design for mobile */
+    }
+}
+/* Responsive Styling for Front Page */
+@media screen and (max-width: 768px) {
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: rgb(251, 250, 247);
+    }
+
+    #port{
+        display: none;
+    }
+
+    #nav {
+        height: auto;
+        padding: 10px 0; /* Add padding for better spacing */
+        display: flex;
+        flex-direction: column; /* Stack navigation for mobile */
+        align-items: center;
+    }
+
+    #navItem {
+        display: flex;
+        justify-content: center; /* Center nav items */
+        flex-wrap: wrap; /* Wrap items for better fit */
+    }
+
+    #navItem button {
+        margin: 5px; /* Adjust spacing for buttons */
+        font-size: medium; /* Optimize button size */
+    }
+
+    #nameContent {
+        position: relative;
+        left: 0; /* Center align for mobile */
+        text-align: center; /* Center text */
+        font-size: 1.5rem; /* Adjust font size */
+        margin: 20px auto;
+    }
+
+    #img {
+        position: relative;
+        max-width: 100%;
+        height: auto; /* Maintain aspect ratio */
+        margin: 20px auto; /* Center image */
+    }
+
+    img {
+        max-width: 100%;
+        height: auto; /* Ensure images scale properly */
+    }
+
+    #frontabt {
+        margin: 20px;
+        padding: 20px;
+        text-align: center; /* Center content */
+        border-radius: 10px;
+    }
+
+    #name {
+        font-size: 1.2rem; /* Scale down typing effect text */
+        white-space: normal; /* Wrap text for mobile */
+        border-right: none; /* Simplify design */
+        animation: none; /* Optional: Disable animation on small screens */
+    }
+}
+
+/* Responsive Design for #abtp */
+
+/* Revised Media Query for #abtp */
+
+
+/* Media Query for Typing Effect */
+@media screen and (max-width: 768px) {
+    #name {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+        width: 90%; /* Ensure the text fits within the screen */
+        margin: 10px auto; /* Center align */
+         /* Align text to the center */
+        white-space: nowrap; /* Maintain typing effect */
+        overflow: hidden; /* Keep text within bounds */
+        border-right: 2px solid transparent; /* Cursor effect */
+        animation: typing 2.5s steps(22), cursor 0.8s ; /* Typing and cursor animations */
+    }
+
+    @keyframes typing {
+        from {
+            width: 0; /* Start typing from nothing */
+         
+        }
+        to {
+            width: 100%; /* End with full text visible */
+          
+        }
+    }
+
+    @keyframes cursor {
+        50% {
+            border-color: black; /* Make cursor invisible periodically */
+        }
+        100% {
+            border-color: transparent; /* Return cursor to black */
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    #name,#dev{
+        position:relative;
+        top: -60vh;
+       
+
+    }
+
+
 }
